@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "stir$((($(echo "$WATER" | tr -c -d 'ewat' | tr -d 'r' | tr -s 'ewat' '0123') + $(echo "$STIR" | tr -c -d 'stir' | tr -d '.' | tr -s 'stir' '01234')) / 5))"
